@@ -1,3 +1,24 @@
+/* Start navbar */
+
+li {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  position: relative;
+  padding: 10px;
+  float: right;
+}
+
+.nav-list li {
+  padding: 10px;
+}
+
+/* End navbar */
+
+/* Start main content */
+
 .parent {
   height: 200px;
   width: 100%;
@@ -13,6 +34,22 @@ h1 {
   font-size: 80px;
   padding: 20px;
   overflow: visible;
+}
+
+.blueletter {
+  color: #4285f4;
+}
+
+.redletter {
+  color: #ea4335;
+}
+
+.yellowletter {
+  color: #fbbc05;
+}
+
+.greenletter {
+  color: #34a853;
 }
 
 .search-icon {
@@ -66,6 +103,7 @@ input:focus {
 
 .buttons {
   text-align: center;
+  padding: 30px;
 }
 
 .buttons button {
@@ -74,37 +112,17 @@ input:focus {
   border: none;
 }
 
-li {
-  list-style: none;
+#translate {
+  text-align: center;
 }
 
-.nav-list {
-  display: flex;
-  position: relative;
-  padding: 10px;
-  float: right;
-}
+/* End main content */
 
-.nav-list li {
-  padding: 10px;
-}
+/* Start footers */
 
-.blueletter {
-  color: #4285f4;
-}
+/* End footers */
 
-.redletter {
-  color: #ea4335;
-}
-
-.yellowletter {
-  color: #fbbc05;
-}
-
-.greenletter {
-  color: #34a853;
-}
-
+/* Start media queries */
 @media (max-width: 650px) {
   .searchbar {
     width: 90%;
