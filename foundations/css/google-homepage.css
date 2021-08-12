@@ -1,8 +1,24 @@
 h1 {
-    font-size: 32px;
-    color: blue;
+  font-size: 32px;
+  color: blue;
 }
 
 li {
-    list-style: none;
+  list-style: none;
+}
+
+.blueletter {
+  color: #4285f4;
+}
+
+.redletter {
+  color: #ea4335;
+}
+
+.yellowletter {
+  color: #fbbc05;
+}
+
+.greenletter {
+  color: #34a853;
 }
