@@ -4,4 +4,4 @@ There will be two parts to the project:
   1. Creating the google homepage.
   2. Creating a replica of the first results page after a search term is entered. 
 
-After the projects are complete, the process will be retold here. 
+After the projects are complete, the process will be retold under the branch: the_odin_project. 
