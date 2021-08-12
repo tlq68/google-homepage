@@ -1,3 +1,11 @@
+body {
+  border: 2px solid green;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Times New Roman", Cambria, Cochin, Georgia, Times, serif;
+}
+
 /* Start navbar */
 
 li {
@@ -119,7 +127,21 @@ input:focus {
 /* End main content */
 
 /* Start footers */
+footer-container {
+  position: fixed;
+  bottom: 0;
+  background-color: #ffd800;
+  text-align: center;
+  right: 0;
+  left: 0;
+}
+footer {
+  border: 2px solid green;
+}
 
+#footer2 li {
+  display: inline;
+}
 /* End footers */
 
 /* Start media queries */
