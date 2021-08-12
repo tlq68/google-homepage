@@ -58,7 +58,8 @@ input:focus {
   left: 55px;
   font-size: 20px;
   height: 32px;
-  width: 400px;
+  width: 80%;
+
   border: transparent;
   outline: none;
 }
@@ -102,4 +103,10 @@ li {
 
 .greenletter {
   color: #34a853;
+}
+
+@media (max-width: 650px) {
+  .searchbar {
+    width: 90%;
+  }
 }
