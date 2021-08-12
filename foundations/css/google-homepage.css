@@ -15,7 +15,28 @@ h1 {
   overflow: visible;
 }
 
-#searchbar-container {
+.search-icon {
+  display: flex;
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  font-size: 28px;
+  color: #1d56b1;
+}
+
+.mic-icon {
+  display: flex;
+  position: absolute;
+  top: 7px;
+  right: 13px;
+  font-size: 28px;
+  color: black;
+}
+
+.mic-icon:focus,
+.mic-icon:active,
+.mic-icon:visited {
+  color: black;
 }
 
 .searchbar {
@@ -34,7 +55,7 @@ input:focus {
   display: flex;
   position: absolute;
   top: 2.5px;
-  left: 30px;
+  left: 55px;
   font-size: 20px;
   height: 32px;
   width: 400px;
