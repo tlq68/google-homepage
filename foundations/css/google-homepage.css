@@ -1,5 +1,4 @@
 body {
-  border: 2px solid green;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +30,7 @@ li {
 
 /* Start main content */
 
-.parent {
+.logo-parent {
   height: 200px;
   width: 100%;
   margin: 0 auto;
@@ -154,7 +153,7 @@ footer-container {
 }
 
 #footer2 ul li {
-  padding: 5px;
+  padding: 4px;
 }
 
 #footer3 ul {
@@ -163,12 +162,8 @@ footer-container {
   padding-left: 0;
 }
 
-#footer2 {
-  border: 2px solid red;
-}
-
-#footer3 {
-  border: 2px solid blue;
+#footer3 ul li {
+  padding: 4px;
 }
 
 /* End footers */
@@ -177,5 +172,13 @@ footer-container {
 @media (max-width: 650px) {
   .searchbar {
     width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer2 ul,
+  #footer3 ul {
+    text-align: center;
+    margin: auto;
   }
 }
