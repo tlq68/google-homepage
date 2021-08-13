@@ -1,0 +1,260 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Times New Roman", Cambria, Cochin, Georgia, Times, serif;
+}
+
+.container {
+  /* Used to avoid jarring jumps from Bootstrap. */
+  min-width: 97%;
+}
+
+/* Start navbar */
+
+li {
+  list-style: none;
+}
+
+.nav-list {
+  /* Positioning icons and user links. */
+  display: flex;
+  position: relative;
+  padding: 10px;
+  float: right;
+}
+
+.nav-list li {
+  /* Separates items in nav area. */
+  padding: 10px;
+}
+
+.nav-list-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-list-links li a:hover {
+  text-decoration: underline;
+}
+
+.apps,
+.account_circle {
+  /* To avoid highlighting if clicked. */
+  user-select: none;
+}
+
+.apps:hover,
+.account_circle:hover {
+  /* Highlight shadow. */
+  background-color: rgba(175, 174, 174, 0.247);
+  box-shadow: 0 0 0 3px rgba(175, 174, 174, 0.247);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* End navbar */
+
+/* Start main content */
+
+.logo-parent {
+  /* Helps position the Google logo. */
+}
+
+h1 {
+  font-size: 80px;
+  padding: 20px;
+
+  /* Avoids potential issues of part of logo being covered. */
+  overflow: visible;
+}
+
+/* Coloring for logo. */
+.blueletter {
+  color: #4285f4;
+}
+
+.redletter {
+  color: #ea4335;
+}
+
+.yellowletter {
+  color: #fbbc05;
+}
+
+.greenletter {
+  color: #34a853;
+}
+
+.search-icon {
+  /* Positions magnifying glass within search bar. */
+  display: flex;
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  font-size: 28px;
+  color: #1d56b1;
+}
+
+.mic-icon {
+  /* Positions microphone within search bar. */
+  display: flex;
+  position: absolute;
+  top: 7px;
+  right: 13px;
+  font-size: 28px;
+  color: black;
+}
+
+.mic-icon:focus,
+.mic-icon:active,
+.mic-icon:visited {
+  color: black;
+}
+
+.searchbar {
+  /* Positions search bar. */
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+
+  /* Sets default size for search bar. */
+  width: 600px;
+  height: 40px;
+
+  /* Shape and color styling. */
+  background: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.searchbar:hover,
+.searchbar:focus-within {
+  /* This selector provides the box shadow if the input is in focus.*/
+  box-shadow: 1px 2px 7px 3px rgba(175, 174, 174, 0.363);
+}
+
+input,
+input:focus {
+  /* Sets position of actual input field. */
+  display: flex;
+  position: absolute;
+  top: 2.5px;
+  left: 55px;
+
+  /* Size styling. */
+  font-size: 20px;
+  height: 32px;
+  width: 80%;
+
+  /* Makes text field invisible. */
+  border: transparent;
+  outline: none;
+}
+
+.buttons {
+  text-align: center;
+  padding: 30px;
+}
+
+.buttons button {
+  padding: 0.75em 1em;
+  border-radius: 4px;
+  border: none;
+}
+
+#translate {
+  text-align: center;
+
+  padding-bottom: 40px;
+}
+
+/* End main content */
+
+/* Start footers */
+footer-container {
+  /* Positions footers toward the bottom. */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  text-align: center;
+}
+
+#footer2 li,
+#footer3 li {
+  /* Aligns footer items horizontally. */
+  display: inline;
+
+  /* Centers and prevents wrapping. */
+  align-content: center;
+  white-space: nowrap;
+}
+
+#footer2 ul {
+  /* Sets default position to the left. */
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#footer2 ul li {
+  padding: 4px;
+}
+
+#footer3 ul {
+  /* Sets default position to the right. */
+  text-align: right;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#footer3 ul li {
+  padding: 4px;
+}
+
+.footer-links li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+/* End footers */
+
+/* Start media queries */
+
+@media (max-width: 650px) {
+  .searchbar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer2 ul,
+  #footer3 ul {
+    /* Centers footers when Bootstrap stacks them. */
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/* End media queries */
+
+details > summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: " 🡪";
+}
+details[open] summary:after {
+  content: " 🡫";
+}
