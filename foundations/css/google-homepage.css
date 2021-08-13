@@ -169,6 +169,7 @@ footer-container {
 /* End footers */
 
 /* Start media queries */
+
 @media (max-width: 650px) {
   .searchbar {
     width: 90%;
@@ -182,3 +183,5 @@ footer-container {
     margin: auto;
   }
 }
+
+/* End media queries */
