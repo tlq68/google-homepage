@@ -64,7 +64,7 @@ h1 {
   margin: 0;
 
   /* Sets default size for search bar. */
-  width: 70%;
+  width: 500px;
   height: 40px;
 
   /* Shape and color styling. */
@@ -190,6 +190,33 @@ li {
 /* End navbar */
 
 /* Start main content */
+
+#main-content {
+  margin-left: 5em;
+}
+
+#nav-tabs {
+  display: flex;
+  position: relative;
+  max-width: 525px;
+  height: 30px;
+}
+
+#nav-tabs > ul {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+#nav-tabs li {
+  padding-right: 1em;
+}
+
+#tab-hr {
+  max-width: 500px;
+  margin-left: 10px;
+}
 
 details > summary {
   list-style: none;
