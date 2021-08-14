@@ -290,9 +290,6 @@ footer-container {
 
 /* Start media queries */
 
-@media (min-width: 1200px) {
-}
-
 @media (max-width: 767px) {
   #footer2 ul,
   #footer3 ul {
