@@ -20,42 +20,49 @@
 <body>
 
     <!-- Icons in top right -->
-    <div class="container">
-        <nav class="row float-end">
+    
+        <nav id="top-nav" class="">
             <!-- Logo -->
-            <div class="logo-parent">        
-                <h1><span class="blueletter">G</span><span class="redletter">o</span><span class="yellowletter">o</span><span class="blueletter">g</span><span class="greenletter">l</span><span class="redletter">e</span></h1>
+            <div id="logo-parent">        
+                <h1 class=""><span class="blueletter">G</span><span class="redletter">o</span><span class="yellowletter">o</span><span class="blueletter">g</span><span class="greenletter">l</span><span class="redletter">e</span></h1>
             </div>
 
              <!-- Searchbar -->
-            <div id="searchbar-container" class="container">
-                <div class="searchbar">
-                    <a href="#search-input">
-                        <span class="material-icons search-icon">search</span>
-                    </a>
-                    <input id="search-input" type="text">
-                    <a href="https://cloud.google.com/speech-to-text">
-                        <span class="material-icons mic-icon">mic</span>
-                    </a>
+            <div id="searchbar-container">
+                
+                    <div class="searchbar">
+                        <a href="#search-input">
+                            <span class="material-icons search-icon">search</span>
+                        </a>
+                        <input id="search-input" type="text">
+                        <a href="https://cloud.google.com/speech-to-text">
+                            <span class="material-icons mic-icon">mic</span>
+                        </a>
+                
+                    </div>
+           </div>
             
-                </div>
-            </div>
 
             <!-- Profile icons -->
-            <ul class="nav-list nav-list-links">
-                
-                <li>
-                    <a href="">option-icon</a>
-                </li>
-                <li>
-                    <span class="material-icons apps">apps</span>
-                </li>
-                <li>
-                    <span class="material-icons account_circle">account_circle</span>
-                </li>
-            </ul>
+           <div id="nav-list-container" class="">
+               
+                <ul class="nav-list nav-list-links">
+               
+                    <li>
+                        <span class="material-icons settings">
+                            settings
+                            </span>
+                    </li>
+                    <li>
+                        <span class="material-icons apps">apps</span>
+                    </li>
+                    <li>
+                        <span class="material-icons account_circle">account_circle</span>
+                    </li>
+                </ul>
+           </div>
         </nav>
-    </div>
+   
 
     <!-- Navigation Menu -->
     <div class="container">
@@ -70,7 +77,7 @@
                 <li>Tools</li>
             </ul>
         </nav>
-    </div>
+    
     
     <!-- Search hits and speed -->
     <div>About 105,000,000 results (0.72 seconds)</div>

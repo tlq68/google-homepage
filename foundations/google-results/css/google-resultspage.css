@@ -1,8 +1,10 @@
 body {
+  min-width: 755px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: "Times New Roman", Cambria, Cochin, Georgia, Times, serif;
+  overflow: scroll;
 }
 
 .container {
@@ -12,58 +14,25 @@ body {
 
 /* Start navbar */
 
-li {
-  list-style: none;
-}
-
-.nav-list {
-  /* Positioning icons and user links. */
+#top-nav {
   display: flex;
   position: relative;
-  padding: 10px;
-  float: right;
+  height: 100px;
+  margin: 0;
 }
 
-.nav-list li {
-  /* Separates items in nav area. */
-  padding: 10px;
-}
-
-.nav-list-links li a {
-  color: black;
-  text-decoration: none;
-}
-
-.nav-list-links li a:hover {
-  text-decoration: underline;
-}
-
-.apps,
-.account_circle {
-  /* To avoid highlighting if clicked. */
-  user-select: none;
-}
-
-.apps:hover,
-.account_circle:hover {
-  /* Highlight shadow. */
-  background-color: rgba(175, 174, 174, 0.247);
-  box-shadow: 0 0 0 3px rgba(175, 174, 174, 0.247);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/* End navbar */
-
-/* Start main content */
-
-.logo-parent {
+#logo-parent {
   /* Helps position the Google logo. */
+  display: flex;
+  position: relative;
+  width: 120px;
 }
 
 h1 {
-  font-size: 80px;
-  padding: 20px;
+  font-size: 32px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 
   /* Avoids potential issues of part of logo being covered. */
   overflow: visible;
@@ -84,6 +53,40 @@ h1 {
 
 .greenletter {
   color: #34a853;
+}
+
+.searchbar {
+  /* Positions search bar. */
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  margin: 0;
+
+  /* Sets default size for search bar. */
+  width: 70%;
+  height: 40px;
+
+  /* Shape and color styling. */
+  background: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.searchbar:hover,
+.searchbar:focus-within {
+  /* This selector provides the box shadow if the input is in focus.*/
+  box-shadow: 1px 2px 7px 3px rgba(175, 174, 174, 0.363);
+}
+
+#searchbar-container {
+  display: flex;
+  position: relative;
+  width: 750px;
+
+  height: auto;
+
+  max-width: 750px;
 }
 
 .search-icon {
@@ -112,29 +115,6 @@ h1 {
   color: black;
 }
 
-.searchbar {
-  /* Positions search bar. */
-  display: flex;
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-
-  /* Sets default size for search bar. */
-  width: 600px;
-  height: 40px;
-
-  /* Shape and color styling. */
-  background: white;
-  border: 1px solid gray;
-  border-radius: 20px;
-}
-
-.searchbar:hover,
-.searchbar:focus-within {
-  /* This selector provides the box shadow if the input is in focus.*/
-  box-shadow: 1px 2px 7px 3px rgba(175, 174, 174, 0.363);
-}
-
 input,
 input:focus {
   /* Sets position of actual input field. */
@@ -153,21 +133,76 @@ input:focus {
   outline: none;
 }
 
-.buttons {
-  text-align: center;
-  padding: 30px;
+li {
+  list-style: none;
 }
 
-.buttons button {
-  padding: 0.75em 1em;
-  border-radius: 4px;
-  border: none;
+#nav-list-container {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  height: auto;
+  right: 2%;
+}
+.nav-list {
+  /* Positioning icons and user links. */
+  display: flex;
+  position: relative;
+  right: 0;
+  padding: 10px;
 }
 
-#translate {
-  text-align: center;
+.nav-list li {
+  /* Separates items in nav area. */
+  padding: 10px;
+}
 
-  padding-bottom: 40px;
+.nav-list-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-list-links li a:hover {
+  text-decoration: underline;
+}
+
+.apps,
+.account_circle,
+.settings {
+  /* To avoid highlighting if clicked. */
+  user-select: none;
+}
+
+.apps:hover,
+.account_circle:hover,
+.settings:hover {
+  /* Highlight shadow. */
+  background-color: rgba(175, 174, 174, 0.247);
+  box-shadow: 0 0 0 3px rgba(175, 174, 174, 0.247);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.account_circle {
+  color: blue;
+}
+
+/* End navbar */
+
+/* Start main content */
+
+details > summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: " ►";
+}
+details[open] summary:after {
+  content: " ▼";
 }
 
 /* End main content */
@@ -228,10 +263,7 @@ footer-container {
 
 /* Start media queries */
 
-@media (max-width: 650px) {
-  .searchbar {
-    width: 90%;
-  }
+@media (min-width: 1200px) {
 }
 
 @media (max-width: 767px) {
@@ -241,20 +273,10 @@ footer-container {
     text-align: center;
     margin: auto;
   }
+
+  input {
+    max-width: 50%;
+  }
 }
 
 /* End media queries */
-
-details > summary {
-  list-style: none;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::after {
-  content: " ►";
-}
-details[open] summary:after {
-  content: " ▼";
-}
