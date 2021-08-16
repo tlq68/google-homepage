@@ -181,15 +181,6 @@ input:focus {
 /* End main content */
 
 /* Start footers */
-footer-container {
-  /* Positions footers toward the bottom. */
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
-  text-align: center;
-}
 
 #footer2 li,
 #footer3 li {
@@ -230,6 +221,15 @@ footer-container {
 
 .footer-links li a:hover {
   text-decoration: underline;
+}
+
+#footer-container {
+  /* Positions footers toward the bottom. */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 10px;
 }
 
 /* End footers */
