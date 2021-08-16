@@ -222,6 +222,47 @@ li {
   margin-bottom: 15px;
 }
 
+.gray {
+  color: rgb(100, 98, 98);
+}
+
+#first-result {
+  font-size: 14px;
+  margin-bottom: 5vh;
+}
+
+.link-no-style, .link-no-style:hover, .link-no-style:active, .link-no-style:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.result-main-link {
+  font-size: 20px;
+  color: blue;
+}
+
+.result-main-link:hover {
+  text-decoration: underline;
+}
+
+#people-also-ask {
+  font-size: 22px;
+}
+
+.hr-50 {
+  width: 50%;
+}
+
+#people-also-ask details {
+  font-size: 18px;
+}
+
+details {
+  max-width: 500px;
+  border-top: 1px solid rgba(175, 174, 174, 0.336);
+  padding: 10px 0;
+}
+
 details > summary {
   list-style: none;
 }
@@ -231,10 +272,13 @@ summary::-webkit-details-marker {
 
 summary::after {
   content: " ►";
+  float: right;
 }
 details[open] summary:after {
   content: " ▼";
 }
+
+
 
 /* End main content */
 
