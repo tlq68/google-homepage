@@ -226,9 +226,14 @@ li {
   color: rgb(100, 98, 98);
 }
 
-#first-result {
+.result {
   font-size: 14px;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
+}
+
+
+.link-no-style {
+  margin: 10px 0;
 }
 
 .link-no-style, .link-no-style:hover, .link-no-style:active, .link-no-style:focus {
@@ -245,12 +250,12 @@ li {
   text-decoration: underline;
 }
 
-#people-also-ask {
-  font-size: 22px;
+.result {
+  max-width: 550px;
 }
 
-.hr-50 {
-  width: 50%;
+#people-also-ask {
+  font-size: 22px;
 }
 
 #people-also-ask details {
@@ -258,7 +263,7 @@ li {
 }
 
 details {
-  max-width: 500px;
+  max-width: 650px;
   border-top: 1px solid rgba(175, 174, 174, 0.336);
   padding: 10px 0;
 }
